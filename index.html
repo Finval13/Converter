@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="convertCurrency(event)">
+      <h1>&ntilde Конвертер валют</h1>
+      <p id="currentDate"></p>
+      <p id="start">Міняю</p>
+      <div class="input-container">
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="PLN">PLN</option>
+          <option value="UAH">UAH</option>
+        </select>
+      </div>
+      <div class="arrow">
+        <button type="submit">=</button>
+        <button id="arrow">&#10607;</button>
+      </div>
+      <div class="result-container">
+        <p id="rez">Отримаю</p>
+        <div class="input-container">
+          <h2 id="result"></h2>
+          <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="PLN">PLN</option>
+            <option value="UAH">UAH</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

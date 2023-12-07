@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+form {
+  max-width: 300px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 30px auto;
+  background-color: rgb(206, 205, 205);
+  position: relative;
+}
+
+h1 {
+  background: linear-gradient(to bottom, white, green 100%, white, green);
+  text-align: start;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-right: 5px;
+}
+
+input,
+select {
+  padding: 8px;
+}
+
+#amount {
+  width: 78%;
+  text-align: end;
+}
+
+#result,
+#toCurrency,
+#amount,
+#fromCurrency {
+  border-radius: 5px;
+  background-color: rgba(238, 239, 162, 0.712);
+  border: 1px solid rgb(150, 150, 150);
+  box-shadow: inset 1px 1px 3px 1px rgba(73, 73, 73, 0.632);
+}
+
+#result {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  width: 79%;
+  min-height: 35px;
+}
+
+#currentDate {
+  background-color: #bebbbb;
+  padding: 15px;
+  text-align: end;
+}
+
+#rez,
+#start {
+  text-align: start;
+  margin-left: 12px;
+}
+
+.arrow button {
+  width: 65px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  transform: translate(70px);
+}
+
+#arrow {
+  background-color: rgb(225, 221, 221);
+  color: black;
+}
